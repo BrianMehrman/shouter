@@ -1,6 +1,6 @@
 (defproject shouter "0.0.2"
   :description "Shouter app"
-  :url "https://github.com/technomancy/shouter"
+  :url "https://github.com/brianmehrman/shouter"
   :min-lein-version "2.0.0"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
