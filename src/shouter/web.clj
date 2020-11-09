@@ -5,7 +5,8 @@
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
             [shouter.controllers.shouts :as shouts]
             [shouter.views.layout :as layout]
-            [shouter.models.migration :as schema])
+            [shouter.models.migration :as schema]
+            [shouter.models.shout :as model])
   (:gen-class))
 
 (defroutes routes
@@ -18,6 +19,9 @@
 (defn start [port]
   (ring/run-jetty application {:port port
                                :join? false}))
+
+(defn create-shout [shout]
+  (model/create shout))
 
 (defn -main []
   (schema/migrate)

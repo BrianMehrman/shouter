@@ -10,7 +10,8 @@
                  [ring/ring-jetty-adapter "1.4.0"]
                  [compojure "1.4.0"]
                  [ring/ring-defaults "0.1.2"]
-                 [hiccup "1.0.5"]]
+                 [hiccup "1.0.5"]
+                 [com.taoensso/carmine "2.19.1"]]
   :main ^:skip-aot shouter.web
   :ubejar-name "shouter-standalone.jar"
   :plugins [[lein-ring "0.8.13"]]

@@ -8,4 +8,4 @@
   (into [] (sql/query spec ["select * from shouts order by id desc"])))
 
 (defn create [shout]
-  (sql/insert! spec :shouts [:body] [shout]))
+  (sql/insert! spec :shouts {:body shout} {:return-keys ["id" "created_at"]}))

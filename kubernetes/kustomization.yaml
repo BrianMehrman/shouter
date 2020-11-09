@@ -5,6 +5,8 @@ resources:
   - postgres/deployment.yaml
   - postgres/service.yaml
   - postgres/configmap.yaml
+  - redis/deployment.yaml
+  - redis/service.yaml
 
 patchesJson6902:
   - target:
