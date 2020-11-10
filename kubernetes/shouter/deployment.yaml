@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+  labels:
+    app: shouter
+    component: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shouter
+      component: web
+  template:
+    metadata:
+      labels:
+        app: shouter
+        component: web
+    spec:
+      containers:
+        - name: web
+          image: shouter:0.0.2
+          envFrom:
+            - configMapRef:
+                name: clojure
