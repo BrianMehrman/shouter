@@ -7,8 +7,8 @@ metadata:
     component: web
 spec:
   ports:
-  - port: 8080
-    targetPort: 8080
+  - port: 9303
+    targetPort: 9303
   selector:
     app: shouter
     component: web

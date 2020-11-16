@@ -3,18 +3,18 @@ kind: Deployment
 metadata:
   name: postgres
   labels:
-    app: shouter
+    app: recipe-box
     component: postgres
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: shouter
+      app: recipe-box
       component: postgres
   template:
     metadata:
       labels:
-        app: shouter
+        app: recipe-box
         component: postgres
     spec:
       containers:

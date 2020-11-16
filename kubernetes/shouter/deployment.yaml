@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: shouter:0.0.2
+          image: bcmehrman/shouter:0.0.2
           envFrom:
             - configMapRef:
                 name: clojure
