@@ -1,8 +1,14 @@
 apiVersion: skaffold/v2beta7
 kind: Config
 metadata:
-  name: shouter
+  name: recipe_box
 deploy:
   kustomize:
     paths:
-    - kubernetes
+     - kubernetes/overlays/dev
+profiles:
+  - name: staging
+    deploy:
+      kustomize:
+        paths:
+         - kubernetes/overlays/staging
