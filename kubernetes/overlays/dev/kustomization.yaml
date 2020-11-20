@@ -3,11 +3,3 @@ kind: Kustomization
 bases:
   - ../../base
 
-
-# patchesJson6902:
-#   - target:
-#       group: apps
-#       version: v1
-#       kind: Deployment
-#       name: postgres
-#     path: postgres_hostpath_volume_patch.yaml

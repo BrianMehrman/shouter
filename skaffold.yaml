@@ -1,7 +1,7 @@
 apiVersion: skaffold/v2beta7
 kind: Config
 metadata:
-  name: recipe_box
+  name: recipe-box
 deploy:
   kustomize:
     paths:
