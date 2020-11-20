@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: postgres
 data:
-  database: recipe_box
+  database: shouter

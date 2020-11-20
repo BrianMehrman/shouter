@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: clojure
 data:
-  DATABASE_URL: "postgresql://postgres:password@postgres:5432/shouter"
+  DATABASE_URL: "postgresql://postgres:password@postgres:5432/postgres"

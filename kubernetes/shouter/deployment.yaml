@@ -3,18 +3,18 @@ kind: Deployment
 metadata:
   name: web
   labels:
-    app: shouter
+    app: recipe-box
     component: web
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: shouter
+      app: recipe-box
       component: web
   template:
     metadata:
       labels:
-        app: shouter
+        app: recipe-box
         component: web
     spec:
       containers:

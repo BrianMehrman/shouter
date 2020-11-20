@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: web
   labels:
-    app: shouter
+    app: recipe-box
     component: web
 spec:
   ports:
   - port: 9303
-    targetPort: 9303
+    targetPort: 8080
   selector:
-    app: shouter
+    app: recipe-box
     component: web

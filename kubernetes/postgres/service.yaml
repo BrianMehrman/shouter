@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: postgres
   labels:
-    app: shouter
+    app: recipe-box
     component: postgres
 spec:
   ports:
     - port: 5432
       targetPort: 5432
   selector:
-    app: shouter
+    app: recipe-box
     component: postgres
